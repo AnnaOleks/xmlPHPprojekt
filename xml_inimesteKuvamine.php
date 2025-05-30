@@ -31,6 +31,21 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="https://annaoleks24.thkit.ee/php/php/?leht=avaleht.php">Avaleht</a>
+            </li>
+            <li>
+                <a href="rss_uudised.php">RSS uudised</a>
+            </li>
+            <li>
+                <a href="xml_inimesteKuvamine.php">XML lugemine</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 <h2>inimesed.xml failist sisu</h2>
 <?php
 echo "<strong>1. inimese andmed: </strong>";
@@ -77,5 +92,8 @@ echo "<br>";
     }
     ?>
 </table>
+<?php
+include("footer.php");
+?>
 </body>
 </html>

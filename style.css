@@ -123,3 +123,66 @@ input[type=button]:hover {
     background-color: #2ea9a8;
     color: white;
 }
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding-top: 10px;
+}
+.menu li {
+    position: relative;
+}
+.menu > li > a {
+    color: #e4e4e4;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 10px;
+    display: block;
+    transition: color 0.3s;
+    width: 150px;
+}
+.menu > li > a:hover {
+    color: #40bcc0;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    z-index: 99;
+    text-align: left;
+    background: #040404;
+}
+.dropdown li a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #e4e4e4;
+    transition: background-color 0.3s;
+}
+.dropdown li a:hover {
+    color: #40bcc0;
+}
+header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 2px 60px;
+    background-color: transparent;
+    text-align: left;
+}
+footer{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+}
